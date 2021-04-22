@@ -3,7 +3,7 @@ import { patients } from "./data";
 
 const Title = () => {
   return (
-    <div className="container">
+    <div>
       <div className="patients">
         {patients.map((patient) => {
           const {

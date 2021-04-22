@@ -1,21 +1,37 @@
 import React from "react";
-import { Line } from "react-chartjs-2";
+import HealthConditions from "../Charts/HealthConditions";
+import Activity from "../Charts/Activity";
+import BodyTemperature from "../Charts/BodyTemp";
+import BloodPressure from "../Charts/BloodPressure";
+import HeartRate from "../Charts/HeartRate";
+import Labresults from "../Charts/Labresults";
 
 const LineChart = () => {
-  const data = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-    datasets: [
-      {
-        type: "line",
-        label: "Sales for 2020",
-        data: [3, 2, 4, 2, 5, 4],
-        backgroundColor: "rgba(75,192,192,1)",
-        borderColor: "rgba(255, 99, 132, 1)",
-        borderWidth: 2,
-      },
-    ],
-  };
-  return <Line data={data} />;
+  return (
+    <>
+      <h2 className="analytics-header">Analytics</h2>
+      <div className="chart-section">
+        <div className="chart activity">
+          <Activity />
+        </div>
+        <div className=" chart heartRate">
+          <HeartRate />
+        </div>
+        <div className="chart bloodpressure">
+          <BloodPressure />
+        </div>
+        <div className="chart bodytemperature">
+          <BodyTemperature />
+        </div>
+        <div className="chart health-condition">
+          <HealthConditions />
+        </div>
+        <div className="lab-results">
+          <Labresults />
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default LineChart;

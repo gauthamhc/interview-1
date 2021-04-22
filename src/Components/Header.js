@@ -1,17 +1,17 @@
 import React from "react";
-import ChevronRightOutlinedIcon from "@material-ui/icons/ChevronRightOutlined";
-import ErrorOutlineOutlinedIcon from "@material-ui/icons/ErrorOutlineOutlined";
-import FormatListBulletedOutlinedIcon from "@material-ui/icons/FormatListBulletedOutlined";
-import NotificationsOutlinedIcon from "@material-ui/icons/NotificationsOutlined";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import ErrorIcon from "@material-ui/icons/Error";
+import FormatListBulletedIcon from "@material-ui/icons/FormatListBulleted";
+import NotificationsIcon from "@material-ui/icons/Notifications";
 import { doctors } from "./data";
 const Header = () => {
   return (
     <section className="header">
       <h2>ANAHA</h2>
       <div className="pages">
-        <h4>pateint profile</h4>
-        <ChevronRightOutlinedIcon />
-        <h4>Analytics</h4>
+        <p>pateint profile</p>
+        <ChevronRightIcon />
+        <p>Analytics</p>
       </div>
       <div className="drop-down">
         <input list="doctors" name="doctors-list" placeholder="Search" />
@@ -23,9 +23,9 @@ const Header = () => {
         </datalist>
       </div>
       <div className="icons">
-        <ErrorOutlineOutlinedIcon />
-        <FormatListBulletedOutlinedIcon />
-        <NotificationsOutlinedIcon />
+        <ErrorIcon className="error-icon" />
+        <FormatListBulletedIcon />
+        <NotificationsIcon />
       </div>
       <div className="doctor-profiles">
         <select name="" id="">
