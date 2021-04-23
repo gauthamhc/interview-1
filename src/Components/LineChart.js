@@ -1,7 +1,6 @@
 import React from "react";
 import HealthConditions from "../Charts/HealthConditions";
 import Activity from "../Charts/Activity";
-import BodyTemperature from "../Charts/BodyTemp";
 import BloodPressure from "../Charts/BloodPressure";
 import HeartRate from "../Charts/HeartRate";
 import Labresults from "../Charts/Labresults";
@@ -20,9 +19,7 @@ const LineChart = () => {
         <div className="chart bloodpressure">
           <BloodPressure />
         </div>
-        <div className="chart bodytemperature">
-          <BodyTemperature />
-        </div>
+
         <div className="chart health-condition">
           <HealthConditions />
         </div>

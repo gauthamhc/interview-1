@@ -6,10 +6,11 @@ const BloodPressure = () => {
     labels: ["week1", "week2", "week3", "week4"],
     datasets: [
       {
-        data: [20, 30, 20, 30],
+        data: [20, 23, 22, 21],
         label: "Blood Pressure",
-        borderColor: "#3e95cd",
+        borderColor: "#d9534f",
         fill: false,
+        tension: 0.1,
       },
     ],
   };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Line } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 
 const HeartRate = () => {
   const data = {
@@ -8,15 +8,26 @@ const HeartRate = () => {
       {
         data: [20, 30, 20, 30],
         label: "Heart Rate",
-        borderColor: "#3e95cd",
-        fill: false,
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.2)",
+          "rgba(255, 159, 64, 0.2)",
+          "rgba(255, 205, 86, 0.2)",
+          "rgba(75, 192, 192, 0.2)",
+        ],
+        borderColor: [
+          "rgb(255, 99, 132)",
+          "rgb(255, 159, 64)",
+          "rgb(255, 205, 86)",
+          "rgb(75, 192, 192)",
+        ],
+        borderWidth: 1,
       },
     ],
   };
 
   return (
     <>
-      <Line data={data} />
+      <Bar data={data} />
     </>
   );
 };

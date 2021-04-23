@@ -6,10 +6,11 @@ const HealthConditions = () => {
     labels: ["week1", "week2", "week3", "week4"],
     datasets: [
       {
-        data: [20, 30, 20, 30],
+        data: [20, 22, 21, 24],
         label: "Health Conditions",
-        borderColor: "#3e95cd",
+        borderColor: "#5cb85c",
         fill: false,
+        tension: 0.6,
       },
     ],
   };
